@@ -1,0 +1,7 @@
+{
+  "name": "eoapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
