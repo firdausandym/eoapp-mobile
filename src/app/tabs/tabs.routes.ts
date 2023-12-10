@@ -9,12 +9,12 @@ export const routes: Routes = [
       {
         path: 'home',
         loadComponent: () =>
-          import('../home/home.page').then((m) => m.HomePage),
+          import('./home/home.page').then((m) => m.HomePage),
       },
       {
         path: 'task-list',
         loadComponent: () =>
-          import('../task-list/task-list.page').then((m) => m.TaskListPage),
+          import('./task-list/task-list.page').then((m) => m.TaskListPage),
       },
       {
         path: 'add',
@@ -24,18 +24,18 @@ export const routes: Routes = [
       {
         path: 'settings',
         loadComponent: () =>
-          import('../settings/settings.page').then((m) => m.SettingsPage),
+          import('./settings/settings.page').then((m) => m.SettingsPage),
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/home',
         pathMatch: 'full',
       },
     ],
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/home',
     pathMatch: 'full',
   },
 ];
